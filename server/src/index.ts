@@ -14,6 +14,7 @@ interface ITelemetry extends Document {
   ADI: number;
 }
 
+
 const telemetrySchema = new Schema<ITelemetry>({
   Altitude: { type: Number, min: 0, max: 3000, required: true },
   HIS: { type: Number, min: 0, max: 360, required: true },
