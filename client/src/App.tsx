@@ -1,3 +1,39 @@
+/**
+ * Flight Indicators Monitor - Client
+ *
+ * Description:
+ * This React application provides a user interface to display and manage telemetry data
+ * for a flight simulation system. It includes:
+ *
+ * 1. Visual and Text Modes:
+ *    - Visual Mode: Displays data using Altitude Bar, Compass, and Horizon Gauge.
+ *    - Text Mode: Displays telemetry data in a tabular-like format.
+ *
+ * 2. CRUD Operations:
+ *    - Fetches telemetry data from the server using Axios.
+ *    - Allows the user to submit new telemetry data using a form.
+ *    - Retrieves and displays data automatically upon application load.
+ *
+ * 3. Main Components:
+ *    - `AltitudeBar`: Shows altitude as a bar graph.
+ *    - `Compass`: Displays the HIS (Horizontal Situation Indicator) with rotation.
+ *    - `HorizonGauge`: Displays the ADI (Attitude Direction Indicator) with color changes.
+ *    - `VisualDisplay`: Combines all visual indicators.
+ *    - `TextDisplay`: Shows raw telemetry data in text format.
+ *
+ * 4. User Interactions:
+ *    - Allows switching between Text and Visual mode.
+ *    - Provides a form to submit new telemetry data.
+ *    - Displays an error message if the server is unavailable.
+ *
+ * 5. API Communication:
+ *    - Sends and retrieves data from the backend server at `http://localhost:5001/api/telemetry`.
+ *
+ * Technologies Used:
+ * - React with TypeScript
+ * - Axios for HTTP requests
+ * - CSS for basic styling
+ */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
