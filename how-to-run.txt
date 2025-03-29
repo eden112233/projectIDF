@@ -1,0 +1,17 @@
+# Kill MongoDB if still running
+pkill mongod
+
+
+
+# Fix permissions (if needed)
+sudo rm -rf ~/mongo-data
+mkdir -p ~/mongo-data
+sudo chown -R "$USER" ~/mongo-data
+
+
+ 
+Open the terminal and run:
+
+chmod +x start.sh
+
+./start.sh
