@@ -40,6 +40,7 @@ import './App.css';
 
 interface Telemetry {
   Altitude: number;
+  
   HIS: number;
   ADI: number;
 }
